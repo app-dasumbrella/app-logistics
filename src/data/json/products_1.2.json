@@ -1,0 +1,363 @@
+{
+    "list" : [
+        {
+            "id" : "1",
+            "title" : "Cosmo Prime® Air Purifier",
+            "subtitle" : "",
+            "long_desc" : "<p>Cosmo’s Prime Air Purifier uses trademarked technology and smart design to provide a long-lasting, silent and powerful air purifier. It is Singapore’s best-reviewed and best-selling air purifier for good reason.</p><p><strong>Specs</strong></p><ol><li><span style='color: #333333;'>Medical Grade H13 HEPA Filter (filters 99.97% of all micron particles)</span></li><li>Activated Carbon Filter (neutralises odours, absorbs formaldehyde)</li><li>Pre-filter (filters large particles)</li><li>Aerodynamic 360° design for air purification in all directions</li><li><span style='color: #282828;'>PM 2.5 Counter</span></li><li><span style='color: #282828;'>Low Noise level = soft whisper (20dB)</span></li><li>Healthy Ion Release</li><li>Night Light Toggle</li><li><span style='color: #333333;'>High Coverage Area: Up to 80m²</span></li><li>5 Year Warranty</li></ol><p><strong>Dimensions</strong></p><p>Height: 49.7 cm<br>Width: 27 cm<br>Length: 30.3 cm</p><p><strong>More Product Specifications at the bottom of the page.</strong></p><p><span style='text-decoration: underline;'><a class='secondary alert button success is-outline white' href='https://airpurifiers.sg/wp-content/uploads/2020/01/COSMO-AIR-USER-MANUAL.pdf'>Download Cosmo Prime user manual</a></span></p>",
+            "short_desc" : "Cosmo’s Prime Air Purifier uses trademarked technology and smart design to provide a long-lasting, silent and powerful air purifier. It is Singapore’s best-reviewed and best-selling air purifier for good reason.",
+            "type" : "variable",
+            "categories" : "1,3",
+            "options" : [
+                {
+                    "name" : "Size",
+                    "values" : [
+                        {
+                            "value" : "10L"
+                        },
+                        {
+                            "value" : "25L"
+                        },
+                        {
+                            "value" : "45L"
+                        }
+                    ]
+                },
+                {
+                    "name" : "Color",
+                    "values" : [
+                        {
+                            "value" : "Black"
+                        },
+                        {
+                            "value" : "White"
+                        },
+                        {
+                            "value" : "Silver"
+                        },
+                        {
+                            "value" : "Metal"
+                        }
+                    ]
+                },
+                {
+                    "name" : "Type",
+                    "values" : [
+                        {
+                            "value" : "Floor Unit"
+                        },
+                        {
+                            "value" : "Table Top"
+                        }
+                    ]
+                }
+            ],
+            "variants" : [
+                {
+                    "id" : "201",                    
+                    "sale_price" : "11.00",
+                    "regular_price" : "15.00",
+                    "sku" : "APP-201",
+                    "parent_id" : "1",
+                    "selectedOptions" : [
+                        {
+                            "name" : "Size",
+                            "value" : "10L"
+                        },
+                        {
+                            "name" : "Color",
+                            "value" : "Black"
+                        },
+                        {
+                            "name" : "Type",
+                            "value" : "Floor Unit"
+                        }
+                    ]
+                  
+                },
+                {
+                    "id" : "202",                    
+                    "sale_price" : "10.00",
+                    "regular_price" : "16.00",
+                    "sku" : "APP-202",
+                    "parent_id" : "1",
+                    "selectedOptions" : [
+                        {
+                            "name" : "Size",
+                            "value" : "25L"
+                        },
+                        {
+                            "name" : "Color",
+                            "value" : "Silver"
+                        },
+                        {
+                            "name" : "Type",
+                            "value" : "Table Top"
+                        }
+                    ]
+                },
+                {
+                    "id" : "203",                    
+                    "sale_price" : "13.00",
+                    "regular_price" : "17.00",
+                    "sku" : "APP-203",
+                    "parent_id" : "1",
+                    "selectedOptions" : [
+                        {
+                            "name" : "Size",
+                            "value" : "10L"
+                        },
+                        {
+                            "name" : "Color",
+                            "value" : "Metal"
+                        },
+                        {
+                            "name" : "Type",
+                            "value" : "Floor Unit"
+                        }
+                    ]
+                }
+            ],
+            "reviews" : [
+                {
+                    "name" : "Aleem",
+                    "desc" : "some text here",
+                    "profile" : "https://profileurl.here",
+                    "rating" : "4"
+                },
+                {
+                    "name" : "Ray",
+                    "desc" : "some text here",
+                    "profile" : "https://profileurl.here",
+                    "rating" : "5"
+                },
+                {
+                    "name" : "April",
+                    "desc" : "some text here",
+                    "profile" : "https://profileurl.here",
+                    "rating" : "5"
+                }
+            ],
+            "gallery" : [
+                { 
+                    "type" : "main",
+                    "url" : "https://airpurifiers.sg/wp-content/uploads/2020/01/1.png"
+                },
+                { 
+                    "type" : "sub",
+                    "url" : "https://airpurifiers.sg/wp-content/uploads/2020/01/Untitled-design-1-2.png"
+                },
+                { 
+                    "type" : "sub",
+                    "url" : "https://airpurifiers.sg/wp-content/uploads/2020/01/Untitled-design-d.png"
+                }
+            ],
+            "addons" : [
+                {
+                    "product_id" : "6",
+                    "label" : "Additional title label here",
+                    "price" : "25.00"
+                },
+                {
+                    "product_id" : "7",
+                    "label" : "(Save 10%)",
+                    "price" : "125.00"
+                }
+            ]
+        },
+        {
+            "id" : "6",
+            "title" : "Cosmo Bumble® Air Purifier",
+            "subtitle" : "",
+            "long_desc" : "",
+            "short_desc" : "<p>Cosmo’s Prime Air Purifier uses trademarked technology and smart design to provide a long-lasting, silent and powerful air purifier. It is Singapore’s best-reviewed and best-selling air purifier for good reason.</p><p><strong>Please note: Bundle comes with x2 extra filters (3 filters total including 1 that already comes inside the air purifier)</strong></p>",
+            "type" : "variable",
+            "categories" : "1",
+            "options" : [
+                {
+                    "name" : "Size",
+                    "values" : [
+                        {
+                            "value" : "10L"
+                        },
+                        {
+                            "value" : "25L"
+                        },
+                        {
+                            "value" : "45L"
+                        }
+                    ]
+                },
+                {
+                    "name" : "Color",
+                    "values" : [
+                        {
+                            "value" : "Black"
+                        },
+                        {
+                            "value" : "White"
+                        },
+                        {
+                            "value" : "Silver"
+                        },
+                        {
+                            "value" : "Metal"
+                        }
+                    ]
+                },
+                {
+                    "name" : "Type",
+                    "values" : [
+                        {
+                            "value" : "Floor Unit"
+                        },
+                        {
+                            "value" : "Table Top"
+                        }
+                    ]
+                }
+            ],
+            "variants" : [
+                {
+                    "id" : "101",
+                    "sale_price" : "15.00",
+                    "regular_price" : "35.00",
+                    "sku" : "APP-101",
+                    "parent_id" : "6",
+                    "selectedOptions" : [
+                        {
+                            "name" : "Size",
+                            "value" : "25L"
+                        },
+                        {
+                            "name" : "Color",
+                            "value" : "White"
+                        },
+                        {
+                            "name" : "Type",
+                            "value" : "Floor Unit"
+                        }
+                    ]
+                },
+                {
+                    "id" : "102",
+                    "sale_price" : "40.00",
+                    "regular_price" : "76.00",
+                    "sku" : "APP-102",
+                    "parent_id" : "6",
+                    "selectedOptions" : [
+                        {
+                            "name" : "Size",
+                            "value" : "10L"
+                        },
+                        {
+                            "name" : "Color",
+                            "value" : "Silver"
+                        },
+                        {
+                            "name" : "Type",
+                            "value" : "Table Top"
+                        }
+                    ]
+                },
+                {
+                    "id" : "103",                    
+                    "sale_price" : "53.00",
+                    "regular_price" : "87.00",
+                    "sku" : "APP-103",
+                    "parent_id" : "6",
+                    "selectedOptions" : [
+                        {
+                            "name" : "Size",
+                            "value" : "45L"
+                        },
+                        {
+                            "name" : "Color",
+                            "value" : "Metal"
+                        },
+                        {
+                            "name" : "Type",
+                            "value" : "Floor Unit"
+                        }
+                    ]
+                }
+            ],
+            "reviews" : [
+                {
+                    "name" : "Alison",
+                    "desc" : "some text here",
+                    "profile" : "https://profileurl.here",
+                    "rating" : "4"
+                }
+            ],
+            "gallery" : [
+                { 
+                    "type" : "main",
+                    "url" : "https://airpurifiers.sg/wp-content/uploads/2020/01/Concept-picture-2-1536x1024.png"
+                },
+                { 
+                    "type" : "sub",
+                    "url" : "https://airpurifiers.sg/wp-content/uploads/2020/01/Untitled-design-2.png"
+                }
+            ],
+            "addons" : [
+                {
+                    "product_id" : "1",
+                    "label" : "Additional title label here",
+                    "price" : "85.00"
+                }
+            ]
+        },
+        {
+            "id" : "7",
+            "title" : "Cosmo HEPA® Air Filter",
+            "subtitle" : "",
+            "long_desc" : "",
+            "short_desc" : "<p>Cosmo’s proprietary 3-in-1 filter which stops 99.97% of all harmful airborne particles from getting to the lungs.</p><p>The list of particles filtered includes but is not limited to: virus, bacteria, pollen, allergens, dust, mold, pet dander and much more.</p><p>The filter is able to stop particles as small as PM 0.1 – which are 25 times smaller than the infamous PM 2.5 particles.*</p><p>* To be used together with the Cosmo Prime® air purifier<br>* To be replaced every 1-1.5 years depending on usage and air quality<br>* The Cosmo Prime® air purifier will notify user when the filter needs to be replaced</p>",
+            "type" : "simple",
+            "categories" : "",
+            "options" : [],
+            "variants" : [
+                {
+                    "id" : "7",
+                    "sale_price" : "7.00",
+                    "regular_price" : "55.00",
+                    "sku" : "APH-007",
+                    "parent_id" : "7",
+                    "selectedOptions" : []
+                }
+            ],
+            "reviews" : [
+                {
+                    "name" : "Raheem",
+                    "desc" : "some text here",
+                    "profile" : "https://profileurl.here",
+                    "rating" : "4"
+                },
+                {
+                    "name" : "Baker",
+                    "desc" : "some text here",
+                    "profile" : "https://profileurl.here",
+                    "rating" : "3"
+                },
+                {
+                    "name" : "Ralph",
+                    "desc" : "some text here",
+                    "profile" : "https://profileurl.here",
+                    "rating" : "5"
+                }
+            ],
+            "gallery" : [
+                { 
+                    "type" : "main",
+                    "url" : "https://airpurifiers.sg/wp-content/uploads/2020/02/3-layers.png"
+                },
+                { 
+                    "type" : "sub",
+                    "url" : "https://airpurifiers.sg/wp-content/uploads/2020/02/hepa-air-filter.png"
+                }
+            ],
+            "addons" : []
+        }
+    ]
+}
