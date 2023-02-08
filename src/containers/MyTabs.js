@@ -168,7 +168,7 @@ const styles = StyleSheet.create({
     fontSize: 14,
   },
   label2: {
-    fontFamily: Constants.fontFamilyBold,
+    //fontFamily: Constants.fontFamilyBold,
     fontSize: moderateScale(14),
     color: Color.Text,
     textAlign: 'center'

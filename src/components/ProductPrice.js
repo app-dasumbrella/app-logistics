@@ -16,12 +16,12 @@ export default class ProductPrice extends PureComponent {
 
   render() {
     const { product, hideDisCount, style, theme } = this.props;
-    console.log("PPPPPPPPP",product)
+    console.log("PPPPPPPPP", product)
     return (
       <View style={[styles.priceWrapper, style]}>
         <Text style={[styles.textList, styles.price]}>
-          {`${Tools.getPrice(product.variants &&product.variants[0] &&
-          product.variants[0].sale_price)} `}
+          {`${Tools.getPrice(product.variants && product.variants[0] &&
+            product.variants[0].sale_price)} `}
         </Text>
         <Text style={[styles.textList, styles.salePrice]}>
           {product.onSale ? Tools.getPrice(product.regularPrice) : ""}
@@ -47,7 +47,7 @@ const styles = {
   textList: {
     color: Color.black,
     fontSize: Styles.FontSize.medium,
-    fontFamily: Constants.fontFamily,
+    //fontFamily: Constants.fontFamily,
   },
   salePrice: {
     textDecorationLine: "line-through",
@@ -59,7 +59,7 @@ const styles = {
   price: {
     color: Color.black,
     fontSize: Styles.FontSize.small,
-    fontFamily: Constants.fontFamily,
+    //fontFamily: Constants.fontFamily,
   },
   saleWrap: (theme) => ({
     borderRadius: 5,

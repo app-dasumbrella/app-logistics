@@ -129,7 +129,7 @@ export default class MyOrdersContainer extends PureComponent {
             Tools.getPrice(item.totalPrice, item.currencyCode),
             {
               fontSize: 16,
-              fontFamily: Constants.fontFamilyBold,
+              //fontFamily: Constants.fontFamilyBold,
               color: this.props.theme.primaryColor,
             }
           )}

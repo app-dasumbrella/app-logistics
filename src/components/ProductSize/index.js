@@ -49,7 +49,7 @@ const styles = {
   text: {
     color: "#C6D8E4",
     fontSize: 28,
-    fontFamily: Constants.fontFamily,
+    //fontFamily: Constants.fontFamily,
   },
 };
 

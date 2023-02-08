@@ -11,13 +11,14 @@ export default class WebView extends PureComponent {
   render() {
     const htmlContent = this.props.html;
     const tagsStyles = {
-      p: { margin: 0, padding: 0, fontFamily: Constants.fontFamily },
-      li: { color: "#333" },
-    };
+      p: {
+        margin: 0, padding: 0, //fontFamily: Constants.fontFamily },
+        li: { color: "#333" },
+      };
 
-    return (
-      <View style={{ padding: 10 }}>
-        {/* <HTML
+      return(
+      <View style = {{ padding: 10 }} >
+    {/* <HTML
           html={`${htmlContent}<div style="width: ${widthPort - 40}"></div>`}
           tagsStyles={tagsStyles}
           renderers={{
@@ -41,7 +42,7 @@ export default class WebView extends PureComponent {
             },
           }}
         /> */}
-      </View>
+      </View >
     );
   }
 }

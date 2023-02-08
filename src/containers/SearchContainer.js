@@ -34,21 +34,21 @@ export default class SearchContainer extends PureComponent {
       hasNextPage: false,
       isFetching: false,
       list: [],
-     // emitter: new EventEmitter(),
+      // emitter: new EventEmitter(),
       text: "",
       recommendList: [],
     };
   }
 
   componentDidMount() {
-     
-     this.props.fetchProductByName({ query: "" },(data) => {
+
+    this.props.fetchProductByName({ query: "" }, (data) => {
       this.setState({ recommendList: data.list });
     });
   }
 
   componentWillUnmount() {
-     
+
   }
 
   _renderLoading = () => {
@@ -62,12 +62,12 @@ export default class SearchContainer extends PureComponent {
   };
 
   _handleSearch = (text) => {
-    console.log("SSSSSSSS",text)
+    console.log("SSSSSSSS", text)
 
     if (text.length > 1) {
       this.setState({ isFetching: true });
 
-      this.props.fetchProductByName({ query: text },(data) => {
+      this.props.fetchProductByName({ query: text }, (data) => {
         this.setState({ isFetching: false, ...data });
       });
     }
@@ -77,7 +77,7 @@ export default class SearchContainer extends PureComponent {
     const { cursor, hasNextPage, text } = this.state;
 
     if (cursor && hasNextPage) {
-      this.props.fetchProductByName({ cursor, query: text },(data) => {
+      this.props.fetchProductByName({ cursor, query: text }, (data) => {
         const list = [...this.state.list, ...data.list];
         this.setState({ ...data, list });
       });
@@ -96,7 +96,7 @@ export default class SearchContainer extends PureComponent {
         id={item.id}
         product={item}
         showImage
-        variant={item.variants&&item.variants[0]}
+        variant={item.variants && item.variants[0]}
         showAddToCart
         showRating
       />
@@ -159,7 +159,7 @@ const styles = {
     paddingTop: 20,
   },
   text: {
-    fontFamily: Constants.fontFamilyBold,
+    //fontFamily: Constants.fontFamilyBold,
     fontSize: 20,
   },
 };

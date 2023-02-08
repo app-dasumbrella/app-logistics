@@ -139,7 +139,7 @@ const styles = StyleSheet.create({
     marginBottom: 10
   },
   head: {
-    fontFamily: Constants.fontFamilyBold,
+    //fontFamily: Constants.fontFamilyBold,
     color: Color.blackTextPrimary,
     marginTop: 5
   },
@@ -169,7 +169,7 @@ const styles = StyleSheet.create({
     resizeMode: "contain",
   },
   text: {
-    fontFamily: Constants.fontFamilyBold,
+    //fontFamily: Constants.fontFamilyBold,
     color: Color.blackTextPrimary,
   },
   text2: {

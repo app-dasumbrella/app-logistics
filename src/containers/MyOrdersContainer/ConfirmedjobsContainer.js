@@ -344,7 +344,7 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   label: {
-    fontFamily: Constants.fontFamilyBold,
+    //fontFamily: Constants.fontFamilyBold,
     fontSize: 16,
     color: Color.Text,
     marginLeft: 8,
@@ -352,7 +352,7 @@ const styles = StyleSheet.create({
   headerTitle: {
     color: Color.textDefault,
     fontSize: 30,
-    fontFamily: Constants.fontFamilyBold,
+    //fontFamily: Constants.fontFamilyBold,
   },
   colorback: {
     backgroundColor: Color.yellow,

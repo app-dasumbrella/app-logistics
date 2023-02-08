@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
     padding: 4,
     color: Color.SideMenuText,
     fontSize: Styles.FontSize.big,
-    fontFamily: Constants.fontFamily,
+    //fontFamily: Constants.fontFamily,
   },
 });
 

@@ -80,15 +80,14 @@ export default class ProofDetailedContainer extends PureComponent {
             marginTop: 30,
             justifyContent: "space-between",
             paddingHorizontal: "5%",
-            alignItems:'center'
+            alignItems: 'center'
           }}
         >
           <Button
             type={"border"}
-            style={[{ padding: 10  },item == "Proof of Collection" ?{ width: "97%"}:{ width: "45%"}]}
-            text={`Upload ${
-              item == "Proof of Collection" ? "Collection " : "Delivery"
-            } picture`}
+            style={[{ padding: 10 }, item == "Proof of Collection" ? { width: "97%" } : { width: "45%" }]}
+            text={`Upload ${item == "Proof of Collection" ? "Collection " : "Delivery"
+              } picture`}
           />
           {item == "Proof of Delivery" && (
             <Button
@@ -184,7 +183,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontSize: 15,
-    fontFamily: Constants.fontFamily,
+    //fontFamily: Constants.fontFamily,
     color: Color.TextDefault,
   },
   priceContainer: {
@@ -197,13 +196,13 @@ const styles = StyleSheet.create({
   price: {
     fontSize: 16,
     color: Color.Text,
-    fontFamily: Constants.fontFamilyBold,
+    //fontFamily: Constants.fontFamilyBold,
     marginBottom: 10,
   },
   productVariant: {
     fontSize: 15,
     color: Color.blackTextSecondary,
-    fontFamily: Constants.fontFamily,
+    //fontFamily: Constants.fontFamily,
   },
   btnRemove: {
     justifyContent: "center",

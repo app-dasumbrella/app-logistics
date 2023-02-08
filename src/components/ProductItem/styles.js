@@ -26,7 +26,7 @@ export default StyleSheet.create({
   },
   title: {
     fontSize: 15,
-    fontFamily: Constants.fontFamily,
+    //fontFamily: Constants.fontFamily,
     color: Color.Text,
   },
   priceContainer: {

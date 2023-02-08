@@ -172,7 +172,7 @@ export default class UserAddressFormContainer extends PureComponent {
           placeholder: "Country",
           error: Languages.NotSelectedError,
           stylesheet: customStyle,
-          value:"SG"
+          value: "SG"
         },
         city: {
           label: Languages.City,
@@ -254,10 +254,10 @@ export default class UserAddressFormContainer extends PureComponent {
           address: newAddress,
         },
         (data) => {
-          console.log("dadssdsd",data)
+          console.log("dadssdsd", data)
           if (data && data.customerAddress) {
-             this.props.updateUserDefaultAddress({
-               id: data.customerAddress.id,
+            this.props.updateUserDefaultAddress({
+              id: data.customerAddress.id,
               address: data.customerAddress
             });
             this.setState({ added: true });
@@ -312,8 +312,8 @@ export default class UserAddressFormContainer extends PureComponent {
             this.state.added
               ? Languages.AddAddressSuccess
               : this._isValidAddress()
-              ? Languages.UpdateAddress
-              : Languages.AddAddress
+                ? Languages.UpdateAddress
+                : Languages.AddAddress
           }
           onPress={this._onPress}
           isLoading={this.props.isFetching}
@@ -341,7 +341,7 @@ const styles = StyleSheet.create({
     marginTop: 20,
     fontSize: 18,
     color: Color.Text,
-    fontFamily: Constants.fontFamilyBold,
+    //fontFamily: Constants.fontFamilyBold,
   },
   formContent: {
     marginLeft: 10,

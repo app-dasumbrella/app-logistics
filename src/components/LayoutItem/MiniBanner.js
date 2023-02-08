@@ -70,7 +70,7 @@ const styles = {
     color: "#fff",
     backgroundColor: "transparent",
     fontSize: 16,
-    fontFamily: Constants.fontFamilyBold,
+    //fontFamily: Constants.fontFamilyBold,
     letterSpacing: 0.64,
   },
   text: {
@@ -80,6 +80,6 @@ const styles = {
     color: "#fff",
     backgroundColor: "transparent",
     fontSize: 28,
-    fontFamily: Constants.fontFamilyBold,
+    //fontFamily: Constants.fontFamilyBold,
   },
 };

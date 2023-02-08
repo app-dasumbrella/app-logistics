@@ -74,7 +74,7 @@ export default class ListAllContainer extends Component {
 
   render() {
     const { list, isFetching, hasNextPage, categoryId } = this.props;
-    
+
     const onScroll = Animated.event(
       [
         {
@@ -118,6 +118,6 @@ const styles = StyleSheet.create({
   headerTitle: {
     color: Color.textDefault,
     fontSize: 30,
-    fontFamily: Constants.fontFamilyBold,
+    //fontFamily: Constants.fontFamilyBold,
   },
 });

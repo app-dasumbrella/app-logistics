@@ -30,7 +30,7 @@ export default StyleSheet.create({
     lineHeight: 20,
     opacity: 1,
     marginTop: 10,
-    fontFamily: Constants.fontFamilyBold,
+    //fontFamily: Constants.fontFamilyBold,
     color: Color.primary
 
   },
@@ -50,7 +50,7 @@ export default StyleSheet.create({
     color: Color.TabActive,
     marginTop: 10,
     marginBottom: 4,
-    fontFamily: Constants.fontFamilyBold,
+    //fontFamily: Constants.fontFamilyBold,
   },
   row: {
     flexDirection: "row",
@@ -61,22 +61,22 @@ export default StyleSheet.create({
   rowLabel: {
     fontSize: 16,
     color: Color.Text,
-    fontFamily: Constants.fontFamilyBold,
+    //fontFamily: Constants.fontFamilyBold,
   },
   label: {
-    fontFamily: Constants.fontFamilyBold,
+    //fontFamily: Constants.fontFamilyBold,
     fontSize: 16,
     color: Color.Text,
     marginLeft: 8,
   },
   label2: {
-    fontFamily: Constants.fontFamilyBold,
+    //fontFamily: Constants.fontFamilyBold,
     fontSize: moderateScale(10),
     color: Color.Text,
     textAlign: 'center'
   },
   label3: {
-    fontFamily: Constants.fontFamilyBold,
+    //fontFamily: Constants.fontFamilyBold,
     fontSize: moderateScale(12),
     color: Color.Text,
     textAlign: 'center'
@@ -84,7 +84,7 @@ export default StyleSheet.create({
   message: {
     fontSize: 14,
     textAlign: "center",
-    fontFamily: Constants.fontFamily,
+    //fontFamily: Constants.fontFamily,
     color: Color.Text,
     width: 230,
     marginTop: 10,
@@ -101,7 +101,7 @@ export default StyleSheet.create({
     }),
   },
   title: {
-    fontFamily: Constants.fontFamilyBold,
+    //fontFamily: Constants.fontFamilyBold,
     color: Color.TextDefault,
     marginBottom: 5,
   },
@@ -111,7 +111,7 @@ export default StyleSheet.create({
     marginBottom: 5,
   },
   lighttext: {
-    fontFamily: Constants.fontFamilyBold,
+    //fontFamily: Constants.fontFamilyBold,
     color: Color.TextDefault,
     marginBottom: 5,
 

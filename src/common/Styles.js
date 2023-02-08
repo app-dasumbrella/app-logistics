@@ -127,8 +127,8 @@ Styles.Common = {
             ? -20
             : -8
           : Device.isIphoneX
-          ? -15
-          : 0,
+            ? -15
+            : 0,
       },
       android: {
         top: 0,
@@ -197,13 +197,13 @@ Styles.Common = {
     width: Platform.OS === "ios" ? 180 : 220,
     height: Platform.OS === "ios" ? 20 : 20,
     resizeMode: "contain",
-    marginLeft:'10%'
+    marginLeft: '10%'
   },
   title: {
     width: Platform.OS === "ios" ? 180 : 200,
     height: Platform.OS === "ios" ? 20 : 22,
     textAlign: "center",
-    fontFamily: Constants.fontFamilyBold,
+    ////fontFamily: Constants.fontFamilyBold,
   },
   headerStyle: {
     backgroundColor: "#fff",
@@ -221,8 +221,8 @@ Styles.Common = {
         ? 40
         : 15
       : Device.isIphoneX
-      ? 25
-      : 5,
+        ? 25
+        : 5,
   },
   toolbarIcon: {
     width: 16,
@@ -295,7 +295,7 @@ Styles.Common = {
     height: Device.isIphoneX ? 59 : 50,
   },
   CheckoutButtonText: {
-    fontFamily: Constants.fontFamilyBold,
+    ////fontFamily: Constants.fontFamilyBold,
     fontSize: 20,
     color: "#FFF",
     letterSpacing: 1.2,
@@ -320,7 +320,7 @@ Styles.Common = {
   Textinput: {
     flex: 1,
     fontSize: 16,
-    fontFamily: Constants.fontFamily,
+    //fontFamily: Constants.fontFamily,
     height: 44,
     borderRadius: 0,
     borderWidth: 0,

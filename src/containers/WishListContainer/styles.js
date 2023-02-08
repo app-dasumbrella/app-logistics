@@ -113,7 +113,7 @@ export default StyleSheet.create({
     width: 230,
     marginTop: 10,
     lineHeight: 25,
-    fontFamily: Constants.fontFamily,
+    //fontFamily: Constants.fontFamily,
   },
   bottomView: {
     flexDirection: "row",

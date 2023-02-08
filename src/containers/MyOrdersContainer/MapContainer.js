@@ -39,7 +39,7 @@ import moment from "moment";
 import SectionListing from "./Sectionlist";
 import MapView from "react-native-maps";
 import MapViewDirections from "react-native-maps-directions";
-  
+
 const { width, height } = Dimensions.get("window");
 const ASPECT_RATIO = width / height;
 const LATITUDE = 15.3784805;
@@ -59,18 +59,18 @@ const mapDispatchToProps = {};
 export default class MapsContainer extends Component {
   constructor(props) {
     super(props);
- let {navigation} = props||{}
-let {state} = navigation||{}
-let {params} = state||{}
-let {areas} =params||{}
-let coordinates=[]
-areas&&areas.map(i=>{
-coordinates.push({latitude:i.lat,longitude:i.long})
+    let { navigation } = props || {}
+    let { state } = navigation || {}
+    let { params } = state || {}
+    let { areas } = params || {}
+    let coordinates = []
+    areas && areas.map(i => {
+      coordinates.push({ latitude: i.lat, longitude: i.long })
 
-})
+    })
     // AirBnB's Office, and Apple Park
     this.state = {
-      coordinates:  coordinates ,
+      coordinates: coordinates,
     };
 
     this.mapView = null;
@@ -89,15 +89,15 @@ coordinates.push({latitude:i.lat,longitude:i.long})
   };
   render() {
     const { list, isFetching } = this.props;
-    const {coordinates} = this.state
+    const { coordinates } = this.state
     return (
       <View style={styles.container}>
-        <View style={{ height: 50, backgroundColor: "white",justifyContent:'center' }}>
-          <TouchableOpacity onPress={()=>this.props.navigation.pop()}>
+        <View style={{ height: 50, backgroundColor: "white", justifyContent: 'center' }}>
+          <TouchableOpacity onPress={() => this.props.navigation.pop()}>
             <Image
-            style={{width:20,height:20,paddingHorizontal:'5%',transform:[{ rotate: '180deg'}]}}
-            resizeMode="contain"
-            source={Images.IconNext}
+              style={{ width: 20, height: 20, paddingHorizontal: '5%', transform: [{ rotate: '180deg' }] }}
+              resizeMode="contain"
+              source={Images.IconNext}
             />
           </TouchableOpacity>
         </View>
@@ -110,7 +110,7 @@ coordinates.push({latitude:i.lat,longitude:i.long})
           }}
           style={{ width: "100%", height: "100%" }}
           ref={(c) => (this.mapView = c)}
-          //  onPress={this.onMapPress}
+        //  onPress={this.onMapPress}
         >
           {this.state.coordinates.map((coordinate, index) => (
             <MapView.Marker
@@ -169,6 +169,6 @@ const styles = StyleSheet.create({
   headerTitle: {
     color: Color.textDefault,
     fontSize: 30,
-    fontFamily: Constants.fontFamilyBold,
+    //fontFamily: Constants.fontFamilyBold,
   },
 });

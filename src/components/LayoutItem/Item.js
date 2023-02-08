@@ -8,8 +8,8 @@ import { Color, Constants } from "@common";
 
 export default class LayoutItem extends PureComponent {
   render() {
-    const { onPress,mode, title, product, imageURI, size } = this.props;
-    console.log(this.props,"SwwwwwwSSSSSSSSSS")
+    const { onPress, mode, title, product, imageURI, size } = this.props;
+    console.log(this.props, "SwwwwwwSSSSSSSSSS")
 
     return (
       <TouchableOpacity
@@ -17,7 +17,7 @@ export default class LayoutItem extends PureComponent {
         style={styles.container}
         onPress={onPress}>
         <ImageCache
-              mode={mode}
+          mode={mode}
 
           uri={imageURI}
           style={[styles.image, { width: size.width, height: size.height }]}
@@ -53,7 +53,7 @@ const styles = {
     fontSize: 15,
     lineHeight: Platform.OS === "android" ? 24 : 20,
     color: Color.TextDefault,
-    fontFamily: Constants.fontFamilyBold,
+    //fontFamily: Constants.fontFamilyBold,
     alignSelf: "flex-start",
     marginBottom: 4,
   },

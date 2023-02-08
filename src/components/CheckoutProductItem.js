@@ -49,11 +49,11 @@ const styles = StyleSheet.create({
   title: {
     color: Color.TextDefault,
     fontSize: 16,
-    fontFamily: Constants.fontFamily,
+    //fontFamily: Constants.fontFamily,
   },
   price: {
     color: Color.Text,
     fontSize: 16,
-    fontFamily: Constants.fontFamilyBold,
+    //fontFamily: Constants.fontFamilyBold,
   },
 });

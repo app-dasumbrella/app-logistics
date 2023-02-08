@@ -29,6 +29,6 @@ const styles = StyleSheet.create({
     marginBottom: 5,
     backgroundColor: "transparent",
     color: Color.TextDefault,
-    fontFamily: Constants.fontFamily,
+    //fontFamily: Constants.fontFamily,
   },
 });

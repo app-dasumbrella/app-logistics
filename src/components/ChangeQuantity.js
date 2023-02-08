@@ -54,7 +54,7 @@ export default class ChangeQuantity extends PureComponent {
 }
 ChangeQuantity.defaultProps = {
   quantity: 1,
-  onChangeQuantity: () => {},
+  onChangeQuantity: () => { },
 };
 
 const styles = StyleSheet.create({
@@ -66,7 +66,7 @@ const styles = StyleSheet.create({
   },
   text: {
     fontSize: 18,
-    fontFamily: Constants.fontFamily,
+    //fontFamily: Constants.fontFamily,
     color: Color.blackTextPrimary,
   },
   btnUp: {

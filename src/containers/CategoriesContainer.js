@@ -4,7 +4,7 @@ import React, { PureComponent } from "react";
 import { View, Text, Platform } from "react-native";
 import Parallax from "react-native-parallax";
 import { connect } from "react-redux";
- import { selectCategory } from "@redux/actions";
+import { selectCategory } from "@redux/actions";
 import { isString } from "lodash";
 import { Images, Styles, Constants } from "@common";
 import { Empty, Spinkit } from "@components";
@@ -18,21 +18,21 @@ const mapStateToProps = (state) => {
 
 @connect(
   mapStateToProps,
-  {  selectCategory }
+  { selectCategory }
 )
 export default class CategoriesContainer extends PureComponent {
   componentDidMount() {
     const { category } = this.props;
     const { list } = category;
     if (!list || (list && list.length === 0)) {
-    //  this.props.fetchCategories();
+      //  this.props.fetchCategories();
     }
   }
 
   _onRowClickHandle = (category) => {
-    
+
     this.props.selectCategory(category);
- this.props.navigation.navigate("CategoryScreen");
+    this.props.navigation.navigate("CategoryScreen");
   };
 
   _getTextStyle = (index) => {
@@ -69,7 +69,7 @@ export default class CategoriesContainer extends PureComponent {
             const textStyle = this._getTextStyle(index);
             const categoryImage = this._getImageUrl(category);
             const onPress = () => this._onRowClickHandle(category);
-             return (
+            return (
               <Parallax.Image
                 key={index.toString()}
                 onPress={onPress}
@@ -154,7 +154,7 @@ const styles = {
   numberOfProductsText: {
     color: "white",
     fontSize: 12,
-    fontFamily: Constants.fontFamily,
+    //fontFamily: Constants.fontFamily,
   },
   overlay: {
     // alignItems: "center",

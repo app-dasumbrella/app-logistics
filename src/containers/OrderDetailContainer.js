@@ -880,7 +880,7 @@ const styles = {
     fontWeight: "500",
     fontSize: 22,
     textAlign: I18nManager.isRTL ? "right" : "left",
-    fontFamily: Constants.fontFamilyBold,
+    //fontFamily: Constants.fontFamilyBold,
   },
   header: {
     position: "absolute",

@@ -9,7 +9,7 @@ import { Color, Constants } from "@common";
 export default class ShippingMethod extends PureComponent {
   static default = {
     selected: false,
-    onPress: () => {},
+    onPress: () => { },
   };
 
   render() {
@@ -50,12 +50,12 @@ const styles = {
   money: {
     color: Color.Text,
     fontSize: 16,
-    fontFamily: Constants.fontFamilyBold,
+    //fontFamily: Constants.fontFamilyBold,
   },
   name: {
     color: Color.TextDefault,
     fontSize: 11,
-    fontFamily: Constants.fontFamily,
+    //fontFamily: Constants.fontFamily,
     marginBottom: 5,
   },
   selected: (theme) => ({

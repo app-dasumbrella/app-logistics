@@ -23,7 +23,7 @@ export default class ShippingAddressItem extends PureComponent {
       onPressRemove,
       style,
     } = this.props;
-console.log(address)
+    console.log(address)
     return (
       <TouchableOpacity onPress={onPress} style={{ flex: 1 }}>
         <View style={[styles.container, style]}>
@@ -136,7 +136,7 @@ const styles = StyleSheet.create({
     marginBottom: 5,
     backgroundColor: "transparent",
     color: Color.TextDefault,
-    fontFamily: Constants.fontFamily,
+    //fontFamily: Constants.fontFamily,
   },
   textSelected: {
     color: "#333",
