@@ -86,31 +86,36 @@ export const loadImage = () =>
                 } else if (response.customButton) {
                   reject(response);
                 } else {
-                  ImageResizer.createResizedImage(
-                    response.uri,
-                    1080,
-                    1920,
-                    "JPEG",
-                    85,
-                    0,
-                    null
-                  )
-                    .then((responses) => {
-                      const source = {
-                        uri: response.uri,
-                        type: response.type,
-                        name: response.name,
-                      };
-                      resolve(source);
+                  // ImageResizer.createResizedImage(
+                  //   response.uri,
+                  //   1080,
+                  //   1920,
+                  //   "JPEG",
+                  //   85,
+                  //   0,
+                  //   null
+                  // )
+                  //   .then((responses) => {
+                  const source = []
+                  console.log(response)
+                  response?.assets?.map(it => {
+                    source.push({
+                      uri: it.uri,
+                      type: it.type,
+                      name: it.fileName,
                     })
-                    .catch((err) => {
-                      const source = {
-                        uri: response.uri,
-                        type: response.type,
-                        name: response.name,
-                      };
-                      resolve(source);
-                    });
+                  })
+
+                  resolve(source)
+                  // })
+                  // .catch((err) => {
+                  //   const source = {
+                  //     uri: response.uri,
+                  //     type: response.type,
+                  //     name: response.name,
+                  //   };
+                  //   resolve(source);
+                  // });
                 }
               });
               // console.log('The permission is granted');
@@ -205,31 +210,41 @@ export const loadImageGallery = () =>
                 } else if (response.customButton) {
                   reject(response);
                 } else {
-                  ImageResizer.createResizedImage(
-                    response.uri,
-                    1080,
-                    1920,
-                    "JPEG",
-                    85,
-                    0,
-                    null
-                  )
-                    .then((responses) => {
-                      const source = {
-                        uri: response.uri,
-                        type: response.type,
-                        name: response.name,
-                      };
-                      resolve(source);
+                  const source = []
+                  response?.assets?.map(it => {
+                    source.push({
+                      uri: it.uri,
+                      type: it.type,
+                      name: it.fileName,
                     })
-                    .catch((err) => {
-                      const source = {
-                        uri: response.uri,
-                        type: response.type,
-                        name: response.name,
-                      };
-                      resolve(source);
-                    });
+                  })
+
+                  resolve(source);
+                  // ImageResizer.createResizedImage(
+                  //   response.uri,
+                  //   1080,
+                  //   1920,
+                  //   "JPEG",
+                  //   85,
+                  //   0,
+                  //   null
+                  // )
+                  //   .then((responses) => {
+                  //     const source = {
+                  //       uri: response.uri,
+                  //       type: response.type,
+                  //       name: response.name,
+                  //     };
+                  //     resolve(source);
+                  //   })
+                  //   .catch((err) => {
+                  //     const source = {
+                  //       uri: response.uri,
+                  //       type: response.type,
+                  //       name: response.name,
+                  //     };
+                  //     resolve(source);
+                  //   });
                 }
               });
               // console.log('The permission is granted');
