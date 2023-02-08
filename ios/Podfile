@@ -9,7 +9,12 @@ target 'Origin' do
 
   # Flags change depending on the env values.
   flags = get_default_flags()
-
+  
+  permissions_path = '../node_modules/react-native-permissions/ios'
+  pod 'Permission-LocationAlways', :path => "#{permissions_path}/LocationAlways/Permission-LocationAlways.podspec"
+  pod 'Permission-LocationWhenInUse', :path => "#{permissions_path}/LocationWhenInUse/Permission-LocationWhenInUse.podspec"
+  pod 'Permission-Camera', :path => "#{permissions_path}/Camera"
+  pod 'Permission-PhotoLibrary', :path => "#{permissions_path}/PhotoLibrary"
   use_react_native!(
     :path => config[:reactNativePath],
     # Hermes is now enabled by default. Disable by setting this flag to false.
@@ -26,7 +31,7 @@ target 'Origin' do
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
-  target 'OriginTests' do
+target 'OriginTests' do
     inherit! :complete
     # Pods for testing
   end

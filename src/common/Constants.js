@@ -11,8 +11,8 @@ const Constants = {
   RTL: false, // default to set redux. Only use first time
   useReactotron: true,
   Language: "English", // Arabic, English. Default to set redux. Only use first time
-  fontFamily: "Dosis",
-  fontFamilyBold: "Dosis-Bold",
+  fontFamily: "San Francisco",
+  fontFamilyBold: '',
   fontHeader: "Baloo",
   fontHeaderAndroid: "Baloo",
   isDefaultStore: false,
