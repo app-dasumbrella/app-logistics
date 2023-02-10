@@ -9,9 +9,7 @@
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.dasumbrella.app.dev.logistics
-
-</string>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -51,7 +49,7 @@
 	<key>NSCameraUsageDescription</key>
 	<string>uses your photos to update item deliver. Logistics will only upload and share photo you choose.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
+	<string> Origin Logistics uses your location to update item deliver. Logistics will only use location for direction purpose.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>uses your photos to update item deliver. Logistics will only upload and share photo you choose.</string>
 	<key>UILaunchStoryboardName</key>

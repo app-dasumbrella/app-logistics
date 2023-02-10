@@ -86,6 +86,7 @@ export const loadImage = () =>
                 } else if (response.customButton) {
                   reject(response);
                 } else {
+                  console.log(response)
                   // ImageResizer.createResizedImage(
                   //   response.uri,
                   //   1080,
@@ -210,6 +211,7 @@ export const loadImageGallery = () =>
                 } else if (response.customButton) {
                   reject(response);
                 } else {
+                  console.log(response)
                   const source = []
                   response?.assets?.map(it => {
                     source.push({

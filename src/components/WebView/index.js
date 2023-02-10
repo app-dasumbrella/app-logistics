@@ -12,7 +12,9 @@ export default class WebView extends PureComponent {
     const htmlContent = this.props.html;
     const tagsStyles = {
       p: {
-        margin: 0, padding: 0, //fontFamily: Constants.fontFamily },
+        margin: 0, padding: 0,
+         //fontFamily: Constants.fontFamily 
+      },
         li: { color: "#333" },
       };
 

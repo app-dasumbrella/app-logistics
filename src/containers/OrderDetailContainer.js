@@ -11,7 +11,8 @@ import {
   TouchableOpacity,
   ScrollView,
   Modal,
-  Linking
+  Linking,
+  SafeAreaView
 } from "react-native";
 import { connect } from "react-redux";
 import TimeAgo from "react-native-timeago";
@@ -609,7 +610,7 @@ export default class OrderDetailContainer extends PureComponent {
     let { updateLoading, acceptLoading, userInfo, acceptJobs, updateJobs, InprogressJobs } = this.props
     let { access_token, email } = userInfo || {}
     return (
-      <View style={styles.body}>
+      <SafeAreaView style={styles.body}>
         <NavBarLogo title='' close navigation={this.props.navigation} />
         <View
           style={{
@@ -852,7 +853,7 @@ export default class OrderDetailContainer extends PureComponent {
           </ScrollView>
         )} */}
         {/* {this.renderFooter()} */}
-      </View>
+      </SafeAreaView>
     );
   }
 }

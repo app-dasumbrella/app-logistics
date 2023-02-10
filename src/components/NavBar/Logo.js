@@ -9,15 +9,19 @@ import NavBarCart from "./Cart";
 import * as _ from "lodash";
 import moment from "moment";
 import NavBarClose from "./Close";
+import { StatusBar, SafeAreaView } from 'react-native';
+
 import { windowWidth } from "../../containers/HomeContainer";
 let c = 0
 const NavBarLogo = (props) => {
   let { close, navigation, manual, onPress, title } = props || {}
-
   return (
-    <View >
+    <SafeAreaView >
 
-      <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', backgroundColor: 'white' }}>
+      <View style={{ flexDirection: 'row', 
+      marginTop:15,
+      alignItems: 'center', justifyContent: 'space-between',
+       backgroundColor: 'white' }}>
 
         <View
           style={{
@@ -42,7 +46,7 @@ const NavBarLogo = (props) => {
         {/* <NavBarCart /> */}
         {close && <NavBarClose navigation={navigation} manual={manual} onPress={onPress} />}
       </View>
-    </View>
+    </SafeAreaView>
   )
 };
 //};
